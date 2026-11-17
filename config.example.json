@@ -1,0 +1,9 @@
+{
+  "device_id": 12345678,
+  "password": "REPLACE_WITH_DEVICE_PASSWORD",
+  "login": "account",
+  "app_username": "REPLACE_WITH_APP_USERNAME",
+  "device_version": 31,
+  "password_encoding": "pkcs7",
+  "platform": 10001
+}

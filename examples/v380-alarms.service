@@ -1,0 +1,10 @@
+[Unit]
+Description=V380 SD-card alarm sweep
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=v380
+Environment=V380_CONFIG=/etc/v380/config.json
+ExecStart=/usr/local/bin/v380sd --days 3 --events --out /mnt/media/camera-data/ALARM --template "{day}/{kind}_{day}_{time}_{id}.mp4"

@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+# never commit credentials or captured media
+v380.config.json
+*.h265
+*.h265.incomplete
+recordings/
+*.pcap
+*.pcapng

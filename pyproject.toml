@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "v380-sd-card-fetcher"
+version = "0.1.0"
+description = "Download SD-card recordings from V380 / V380 Pro cameras over the cloud, without the vendor app"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["pycryptodome>=3.20"]
+
+[project.scripts]
+v380sd = "v380sd.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/OWNER/v380-SD-card-fetcher"
+
+[tool.setuptools]
+packages = ["v380sd"]
