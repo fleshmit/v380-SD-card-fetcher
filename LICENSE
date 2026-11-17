@@ -19,12 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-Protocol knowledge in this project is derived from the clean-room reverse
-engineering published in cimplesid/v380-mac (OpenV380), also MIT licensed:
-
-    Copyright (c) OpenV380 contributors — https://github.com/cimplesid/v380-mac
-
-and from PyanSofyan/V380Decoder and other public V380 reverse-engineering work.

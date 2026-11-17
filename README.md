@@ -208,4 +208,5 @@ field positions were found (the published client code uses an older layout).
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE). Third-party credits and their licence terms are in
+[NOTICE](NOTICE).

@@ -1,0 +1,40 @@
+v380-SD-card-fetcher
+====================
+
+This project is MIT licensed (see LICENSE). It is a derivative work of public
+reverse-engineering efforts, and their licences and credits are reproduced here
+as required.
+
+1. cimplesid/v380-mac — "OpenV380"
+   https://github.com/cimplesid/v380-mac
+   Licence: MIT
+   Copyright (c) OpenV380 contributors
+
+   A clean-room Swift implementation of the V380 (Macrovideo) protocol. The cloud
+   packet layouts for the SD-card index and playback commands (361/362/363/364),
+   the relay keep-alive handling, the media-key derivation and the recorded-frame
+   format implemented in this project are derived from that work.
+
+2. PyanSofyan/V380Decoder
+   https://github.com/PyanSofyan/V380Decoder
+   Licence: see upstream repository
+
+   Source of the relay dispatch endpoint (dispa1.av380.net) and its request
+   signing scheme.
+
+3. j-bloggs/v380-4g-stream
+   https://github.com/j-bloggs/v380-4g-stream
+   Licence: MIT
+
+   Notes on relay login and AES handling for 4G camera units.
+
+4. The various public V380Decoder ports that mapped the recorded-frame layout.
+
+Field offsets in docs/PROTOCOL.md were additionally cross-checked byte for byte
+against packet captures of the vendor Android app; those corrections (the
+`ts == segment id` rule, the 0x3A/0x3E/0x42 field positions, the u16+5-byte clock
+encoding) are original to this project.
+
+The protocol remains the property of its authors. This project is not affiliated
+with V380, V380 Pro, Macrovideo, or any camera manufacturer. "V380" is used only
+to describe the devices this tool interoperates with.
